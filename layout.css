@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #e0e0e0;
+}
+
+.abd {
+  height: 1024px;
+}
+
+.main-categories {
+  height: 100%;
+}
+
+.duzenleIconlar a {
+  stroke: blue;
+}
+
+.duzenleIconlar:hover {
+  cursor: pointer;
+}
+
+.subCats div {
+  text-align: center;
+}
+
+.subCats {
+  margin: 20px;
+}
+
+.icon-tr-flag {
+  background: url("./dosyalar/icons/turkey.svg") no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.icon-search {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.icon-search:hover {
+  fill: #57b846 !important;
+}
+
+.icon-spec {
+  background: url("./dosyalar/icons/square-solid.svg") no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.icon-sign {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.icon-home {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.icon-eng-flag {
+  background: url("./dosyalar/icons/uk.svg") no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.back-header {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  /* Color Theme Swatches in Hex */
+  background-color: rgb(25, 45, 161);
+  z-index: -1;
+}
+
+.header {
+  width: 100%;
+}
+
+.header h1 {
+  margin: 0 auto;
+}
+
+.header a {
+  margin-top: 10px;
+  color: white;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: #57b846;
+  fill: #57b846;
+}
+.navigation {
+  float: left;
+  width: 100%;
+}
+
+.navigation a {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  display: inline;
+  transform: translate(50%);
+}
+
+/* .navigation li li:hover {
+  background: #383;
+} */
+
+.content {
+  clear: left;
+  width: 100%;
+  height: 100%;
+}
+
+.echteFooter-right {
+  background: transparent;
+  text-align: right;
+  padding: 20px;
+  height: 1%;
+}
+
+.nameOfProducts {
+  text-align-last: center;
+  font-size: 16px;
+}
+
+.altProducts {
+  margin-top: 2%;
+}
+
+/*  MOBILEEEEEEEEEEEE */
+
+@media screen and (min-width: 961px) {
+  .content {
+    display: inherit;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .content {
+    width: 100%;
+  }
+  .cat-img {
+    width: 50px;
+    height: 50px;
+    translate: transform(-50%);
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .altProducts {
+    margin: 0;
+    width: 157px;
+    height: 165px;
+  }
+
+  a {
+    font-size: smaller;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+
+  .main-categories .container img {
+    /* background-color: green; */
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .nameOfProducts {
+    width: 110px;
+    height: 21px;
+    text-align-last: center;
+  }
+
+  .deneme a {
+    font-size: smaller;
+  }
+
+  .mobileProducts {
+    width: 110px;
+    height: 110px;
+    margin-right: 1%;
+    margin-bottom: 10%;
+  }
+}
+
+/*  MOBILEEEEEEEEEEEEEEE   */
+
+.inf {
+  display: inline;
+}
+
+.infos {
+  visibility: hidden;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.i {
+  color: inherit;
+}
+.inf:hover .infos {
+  visibility: visible;
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url("./dosyalar/fonts/Monoton-Regular.ttf") format("truetype");
+}
+
+/*  LOGIN  */
+
+.login {
+  width: 200px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 5px solid transparent;
+  border-bottom-color: #28d;
+}
+
+.login-header {
+  background: #28d;
+  padding: 10px;
+  font-size: 0.7em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 3px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/*  LOGIN  */
+
+.search-form {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* @media only screen and (max-width:900px){
+  .form-row , .form-inline, .search-form{
+    width: 330px;
+    background-color:yellow;
+  } 
+}*/
